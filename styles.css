@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerBar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    background-color: #21211d;
+}
+
+
+
+.buttonHeader {
+    padding: 0.5rem 1.5rem;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+.buttonHeader:hover {
+    border-color: rgb(134, 112, 112);
+    background-color: rgb(134, 112, 112);
+    color: #fff;
+}
+
+.containerRestaurant {
+    flex-direction: column;
+    background-color: #21211d;
+    padding: 3rem;
+    background-image: url(./doc/restaurantandcafe.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 3rem;
+    height: 630px;
+}
+
+.containerRestaurantInit {
+    flex-direction: column;
+    background-color: #21211d;
+    padding: 3rem;
+    background-image: url(./doc/1generalbackgrpund.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 3rem;
+    height: 500px;
+    color: #fff;
+}
+
+.containerRestaurant h1 {
+    text-transform: uppercase;
+    margin: 1rem 0 2rem 0;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+
+
+.card-dish-entradas img,
+.card-dish-ensaladas img,
+.card-dish-sandwichs img,
+.card-dish-fondo img,
+.card-dish-agregados img,
+.card-dish-postres img,
+.card-dish-jugos-bebidas img {
+    width: 250px;
+    height: 188px;
+    object-fit: cover;
+}
+
+div#container-entradas button {
+    display: none;
+}
+
+div#container-ensaladas button,
+div#container-sandwichs button,
+div#container-fondo button,
+div#container-agregados button,
+div#container-postres button,
+div#container-jugos-bebidas button {
+    order: 3;
+}
+
+div#container-entradas,
+div#container-ensaladas,
+div#container-sandwichs,
+div#container-fondo,
+div#container-agregados,
+div#container-postres,
+div#container-jugos-bebidas {
+    order: 0;
+    /*  height: 605px;
+    overflow: hidden; */
+}
+
+.card-dish-entradas,
+.card-dish-ensaladas,
+.card-dish-sandwichs,
+.card-dish-fondo,
+.card-dish-agregados,
+.card-dish-postres,
+.card-dish-jugos-bebidas {
+    border: 1px solid #8080803d;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.containerMenu,
+.listOrders {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(223, 205, 205);
+    padding: 5rem 10rem;
+}
+
+.buttonView {
+    padding: 0.5rem 1.5rem;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.buttonView:hover {
+    border-color: rgb(134, 112, 112);
+    background-color: rgb(134, 112, 112);
+    color: #fff;
+}
+
+.containerFormInit {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.inputForm {
+    padding: .5rem;
+}
+
+.buttonSubmit {
+    padding: 0.5rem 1.5rem;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+
+.buttonSubmit:hover {
+    border-color: rgb(134, 112, 112);
+    background-color: rgb(134, 112, 112);
+    color: #fff;
+}
+
+.orders {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.order {
+    border: 1px solid #8080803d;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 40em) {
+    .containerFormInit {
+        margin-top: 60%;
+    }
+}
